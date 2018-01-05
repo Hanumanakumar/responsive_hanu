@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width" />
+<link rel="stylesheet" href="css/styles.css">
+<script src="js/jquery.js" type="text/javascript"> </script>
+<title> Responsive Web Designing </title>
+<style>
+/* Setting the box-size border-box */
+
+* {
+	box-sizing: border-box;
+}
+
+/* Styling the body section */
+
+body {
+	font: normal 1em/1.5 sans-serif;
+}
+
+/* Centering the page */
+
+.wrapper {
+	max-width: 60em;
+	margin: 0 auto;
+}
+
+/* Styling the header */
+
+header {
+	background-color: #581845;
+	
+}
+
+
+/* MEDIA QUERY */
+
+@media (min-width: 200px) and (max-width: 480px ) {
+	header h1 {
+		margin-top: 0;
+		padding: .25em;
+		text-align: center;
+	}
+	nav {
+		font-size: 1.3em;
+		margin-right: 2.9em;
+		margin-left: 2.9em;
+		padding: 0;
+		text-align: center;
+		text-decoration: none;
+	}
+
+	nav ul {
+		margin: 0;
+		padding: .10em;
+	}
+
+	nav li {
+		background-color: rgba(148, 187, 255, 1.0);
+		border-radius: 1em;
+		margin-top: 1em;
+		padding: .60em;
+		list-style: none;
+		color:#fff;
+	}
+
+	nav a {
+		padding: 1em;
+		text-decoration: none;
+	}
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+
+	header h1 {
+		margin-top: 0;
+		padding: .60em;
+		text-align: center;
+	}
+	nav {
+		background-color: rgba(148, 187, 255, 1.0);
+		font-size: 1.4em;
+		margin: 0;
+		padding: 0;
+		text-align: center;
+	}
+
+	nav ul {
+		margin: 0;
+		padding: 0;
+	}
+
+	nav li {
+		display: inline;
+	}
+
+	nav a {
+		display: inline-block;
+		padding: 1em;
+		text-decoration: none;
+	}
+
+}
+
+@media only screen and (min-width: 768px) {
+	header {
+		padding: .35em;
+		width: 100%;
+	}
+
+	header h1 {
+		display: inline;
+		margin-top: 0;
+	}
+
+	header,
+	nav {
+		display: inline-block;
+	}
+
+	nav {
+		float: right;
+		font-size: 1.5em;
+	}
+
+	nav ul {
+		margin: 0;
+		display: inline;
+		padding-right: .15em;
+	}
+
+	nav ul li {
+		display: inline-block;
+		list-style: none;
+		padding: .36em 0.9375em;
+	}
+
+	nav a {
+		text-decoration: none;
+		color:#fff;
+	}
+}​
+:-ms-input-placeholder {  
+   text-align: center; 
+}
+</style>
+</head>
+<body>
+<div class="col-3">
+<div>
+      <header>
+      	<h1></h1>
+      	<nav>
+      	  <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+      	  </ul>
+      	</nav>
+      </header>
+    </div>
+	</div>
+<div class="row">
+<section id="home">
+<div class="col-3">
+<div class="header"> <img src="img/cup_coffee.ico"> &nbsp; &nbsp; Coffee shop </div>
+</div>
+
+<div class="col-1">
+<h2> MORNING SPECIAL </h2>
+<ul>
+  <script type="text/javascript">
+  var items=["COFFEE", "TEA","MILK","GREEN TEA"];
+  for(var i=0; i<items.length; i++){
+    document.write("<li class='li'>" +items[i]+"<li>");
+  }
+   </script>
+</ul>
+</div>
+
+<div class="col-5">
+<h2> TODAY SPECIAL </h2>
+<div style="border:2px solid #ddd; border-radius:20px 0px 20px 0px; box-shadow:3px 3px 3px #ddd;padding:2%">
+<p style="font-size:20px; font-family:forte">Special badham tea</p>
+<center><img src="img/Badam tea.png" class="img"></center>
+</div>
+</div>
+
+<div class="col-1">
+<h2> EVENING SPECIAL </h2>
+
+<ul>
+  <script type="text/javascript">
+  var items=["MISORE BAJJI", "SAMOSA","COCONUT BISCUIT","VENNALA ICE-CREAM"];
+  for(var i=0; i<items.length; i++){
+    document.write("<li class='oli'>" +items[i]+"<li>");
+  }
+   </script>
+</ul>
+</div>
+</div>
+</section>
+<div class="col-3">
+  <section class="section" id="about"> ABOUT US</section>
+  <div class="col-4">
+    <center>
+    <img src="img/person1.png" class="about" id="1"> <br> <br>
+    <label> Michel Troisgros </label>
+    <p> Maison Troisgros Restaurant (Ouches, France) </p>
+  </center>
+  </div>
+  <div class="col-4">
+    <center>
+    <img src="img/person2.png" class="about" id="2"> <br> <br>
+    <label>Yannick Alleno</label>
+<p>Alleno Paris (Paris, France)</p>
+  </center>
+  </div>
+  <div class="col-4">
+    <center>
+    <img src="img/person3.png" class="about" id="3"> <br> <br>
+    <label>Joan Roca </label>
+    <p> El Celler De Can Roca (Girona, Spain) </p>
+  </center>
+  </div>
+  <div class="col-4">
+    <center>
+    <img src="img/person4.png" class="about" id="4"> <br> <br>
+    <label> Arnaud Donckele </label>
+    <p> Residence De La Pinede (Saint Tropez, France) </p>
+    </center>
+  </div>
+</div>
+<div class="col-3">
+<section class="section" id="contact"> Contact Us</section>
+<div class="col-7"></div>
+  <div class="col-6" style="padding:2%">
+    <form style="padding:3%" name="form" onsubmit="return validateForm()" method="post">
+	<center>
+      <input type="text" placeholder="Name" style="width:70%; height:30px; text-align:center" name="name"> <br> <br>
+      <input type="email" placeholder="E-mail" style="width:70%; height:30px; text-align:center" name="mail"> <br> <br>
+      <textarea style="width:70%; height:50px" placeholder="Enter Your Message here......." name="message">  </textarea> <br> <br>
+      <button type="submit" style="width:70%; height:30px;" id="button" onclick="myfunction();"> Send Message </button>
+	  </center>
+    </form>
+  </div>
+</div>
+<div class="col-3 footer"> Coffee shop &copy; 2002-17  <a href="#home" style="text-decoration:none; color:#fff"> ^ </a></div>
+</body>
+</html>
+<script>
+function validateForm() {
+    var x = document.forms["form"]["name"].value;
+	var y=document.forms["form"]["mail"].value;
+	var z=document.forms["form"]["message"].value;
+    if (x == "") {
+        alert("Name must be filled out");
+        return false;
+    } else if(y==''){
+        alert("Mail must be filled out");
+        return false;
+    } else if(z==''){
+        alert("Message must be filled out");
+        return false;
+    }
+}
+</script>
+<script>
+$(document).ready(function(){
+  $("a").on('click', function(event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+        window.location.hash = hash;
+      });
+    }
+  });
+});
+
+</script>
